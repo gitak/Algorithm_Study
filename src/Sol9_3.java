@@ -81,9 +81,5 @@ public class Sol9_3 {
 
         System.out.print(count+"  ");
         System.out.println(max );
-
-
-
-
     }
 }
