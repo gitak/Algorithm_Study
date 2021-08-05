@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sol10_1 {
+public class Sol11_1 {
     public static void main(String[] args) {
         //입력시작
         Scanner sc = new Scanner(System.in);
