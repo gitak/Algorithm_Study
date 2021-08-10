@@ -36,12 +36,12 @@ public class Sol5_3 {
 
     //Logic
     public static boolean dfs(int x, int y){
-        // dfs탐색시 주어진 범위를 벗어난다면, 즉시 종료
+        // 1. dfs탐색시 주어진 범위를 벗어난다면, 즉시 종료
         if(x<= -1 || x >= n || y <= -1 || y >= m){
             return false;
         }
-        //구멍이 뚫린 부분을 찾으면 탐색
-        if(map[x][y] == 0){
+        //2. 주어진 범위에서 0인 부분을 찾으면 탐색
+        else if(map[x][y] == 0){
             //해당 노드를 방문 처리
             map[x][y] = 2;
             dfs(x-1, y);
@@ -50,6 +50,9 @@ public class Sol5_3 {
             dfs(x,y+1);
             return true;
         }
-        return false;
+        //3. 방문처리한 부분은 탐색 종료
+        else {
+            return false;
+        }
     }
 }
