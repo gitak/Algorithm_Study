@@ -1,3 +1,5 @@
+package Chapter11;
+
 import java.util.Scanner;
 
 public class Sol11_5 {

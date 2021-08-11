@@ -1,3 +1,5 @@
+package Chapter11;
+
 import java.util.Scanner;
 
 public class Sol11_2 {
@@ -17,7 +19,7 @@ public class Sol11_2 {
                 max += x;
             }
             else{
-                if((num == 0) || (num == 1)){ //현재 숫자보다 왼쪽의 숫자가 0이나 1일 경우 더하는 것이 최대
+                if((num == 0) || (num == 1) || (x == 0) || (x == 1)){ //현재 숫자보다 왼쪽의 숫자가 0이나 1일 경우 더하는 것이 최대
                   max += x;
                 }
                 else{
