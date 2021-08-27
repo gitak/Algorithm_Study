@@ -37,10 +37,9 @@ public class Sol12_7 {
             System.out.println();
         }
          */
-        dist = new ArrayList<Integer>();
+        dist = new ArrayList<Integer>(); //모든 치킨거리의 경우의 수를 담을 ArrayList
         boolean[] visited = new boolean[chicken.size()];
         int x = chicken.size();
-        int y = home.size();
         combination(distance,visited,0,x,m);
         System.out.println(Collections.min(dist));
 
@@ -49,16 +48,16 @@ public class Sol12_7 {
     public static void combination( int[][] distance,boolean[] visited,int start, int x, int r){
         if(r == 0){
             int min = 99999;
-            int sum = 0;
+            int sum = 0; //치킨거리 합을 담을 변수
             int count = 0;
             int[] num = new int[100];
-            for(int i = 0; i < distance.length; i++){
+            for(int i = 0; i < distance.length; i++){ //num 배열에 case(각각의 경우)의 인덱스를 저장
                 if(visited[i]){
                     num[count] = i;
                     count++;
                 }
             }
-            for(int i = 0; i < distance[0].length; i++){
+            for(int i = 0; i < distance[0].length; i++){ //뽑은 case의 치킨거리를 구하고 dist에 저장
                 min = 99999;
                 for(int j = 0; j < count; j++){
                     if(distance[num[j]][i] < min){

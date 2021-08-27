@@ -31,8 +31,43 @@ public class Sol12_5 {
         }
 
         int count = 0; // 시간을 담기 위한 변수
+        List<Integer>snake = new ArrayList<Integer>(); //뱀의 길이를 표현하기 위한 동적배열
+        int[][] head = new int[n][n]; //벰의 머리 위치
+        int x = 0, y= 0;
+        int prev_x, prev_y;
+        int[] dx = {0,1,0,-1}; //시계방향으로 회전했을 때 인덱스값 변화
+        int[] dy = {1,0,-1,0};
+        int t = 0;
+        boolean check = false;
+        /*
+        while(true){
+            count++;
+            if(second[t] == count){
+
+            }
+            if(x>=10 || x < 0 || y >= 10|| y < 0){ //뱀이 맵 밖으로 나가는 경우
+                break;
+            }
+            else{
+                for(int i = 0; i < snake.size(); i++){ //뱀이 자기 자신의 몸통과 부딪히는지 확인
+                       if(head[x][y] == snake.get(i)){
+                           break;
+                       }
+                }
+                if(check){ //뱀이 자기 자신의 몸통과 부딪히는 경우
+                    break;
+                }
+                int temp;
+                if(map[x][y] == 1){ //머리가 있는 곳에 사과가 있는 경우
+
+                }
 
 
+            }
+        }
+
+
+         */
 
     }
 }
