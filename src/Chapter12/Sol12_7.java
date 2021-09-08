@@ -78,9 +78,6 @@ public class Sol12_7 {
             }
         }
 
-
     }
-
-
 
 }
