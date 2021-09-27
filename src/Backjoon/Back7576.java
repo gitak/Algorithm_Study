@@ -4,7 +4,7 @@ import java.util.Queue;
 import java.util.LinkedList;
 
 public class Back7576 {
-    static class tomato{
+    static class tomato{ //토마토의 위치를 나타내기 위한 클래스
         int x;
         int y;
         tomato(int x, int y){
@@ -15,7 +15,7 @@ public class Back7576 {
 
     static int m; //가로
     static int n; //세로
-    static int[] dx = {-1, 1, 0, 0};
+    static int[] dx = {-1, 1, 0, 0}; //상하좌우
     static int[] dy = {0, 0, -1, 1};
     static int[][] board; //토마토 판
     static Queue<tomato> q;
@@ -69,7 +69,7 @@ public class Back7576 {
                 result = Math.max(result,board[i][j]);
             }
         }
-        //토마토가 모두 익은 경우
+        //토마토가 모두 익은 경우 -> result는 1이 최대이다.
         if(result == 1){
             return 0;
         }
