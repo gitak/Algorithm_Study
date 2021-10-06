@@ -10,7 +10,7 @@ public class Back1987 {
         int c = sc.nextInt(); //가로의 길이
         map = new char[r][c];
         sc.nextLine(); //버퍼 지우기
-        //hi
+        //hitn
         for(int i = 0; i < r; i++){
             String temp = sc.nextLine();
             for(int j = 0; j < c; j++){
