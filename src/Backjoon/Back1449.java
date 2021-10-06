@@ -16,7 +16,7 @@ public class Back1449 {
         //Logic
         //1. 물이 새는 위치 오름차순 정렬
         for(int i = n-1; i > 0; i--){
-            for(int j = 0;j < i;j++){
+            for(int j = 0;j < i; j++){
                 int temp;
                 if(arr[j] > arr[j+1]){
                     temp = arr[j];
