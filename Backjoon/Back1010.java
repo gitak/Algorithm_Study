@@ -17,7 +17,7 @@ public class Back1010 {
 
         }
         sc.close(); //입력종료
-
+//test
         for(int i = 0;i < t; i++){
             System.out.println(combination(arr2[i], arr1[i]));
         }
