@@ -1,7 +1,6 @@
 package Backjoon;
 import java.util.Scanner;
 
-
 public class Back1987 {
     static char[][] map;
     public static void main(String[] args) {
@@ -20,6 +19,9 @@ public class Back1987 {
         }
         sc.close(); //입력 종료
         //Logic
+
+
+
 
     }
 }
