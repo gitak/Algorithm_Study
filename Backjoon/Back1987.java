@@ -1,6 +1,7 @@
 package Backjoon;
 import java.util.Scanner;
 
+
 public class Back1987 {
     static char[][] map;
     public static void main(String[] args) {
