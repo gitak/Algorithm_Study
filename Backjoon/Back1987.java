@@ -20,8 +20,5 @@ public class Back1987 {
         sc.close(); //입력 종료
         //Logic
 
-
-
-
     }
 }
