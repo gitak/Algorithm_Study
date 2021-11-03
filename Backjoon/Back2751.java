@@ -26,6 +26,6 @@ public class Back2751 {
             sb.append(value).append("\n");
         }
 
-        System.out.println(sb);
+        System.out.print(sb);
     }
 }
