@@ -29,6 +29,7 @@ public class OpenChat {
 
         ArrayList<String> answerList = new ArrayList<>();
 
+        //answerList에 출력할 문자열들을 저장
         for(int i = 0 ; i < record.length; i++){
             String[] temp = record[i].split(" ");
             if(temp[0].equals("Enter")){
@@ -39,6 +40,7 @@ public class OpenChat {
             }
         }
 
+        //answerList에 있는 문자열들을 answer배열로 복사
         answer = new String[answerList.size()];
         answerList.toArray(answer);
 

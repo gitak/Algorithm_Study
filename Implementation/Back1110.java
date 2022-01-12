@@ -1,4 +1,4 @@
-package Implementaion;
+package Implementation;
 import java.util.Scanner;
 
 public class Back1110 {

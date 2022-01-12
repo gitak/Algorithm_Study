@@ -5,13 +5,11 @@ import java.util.*;
 public class Tuple {
     public static void main(String[] args) {
         String s = "{{2},{2,1},{2,1,3},{2,1,3,4}}";
-        //특수문자를 구분할 때 \\를 특수문자 앞에 삽입
 
         solution(s);
     }
 
     public static int[] solution(String s) {
-
         Map<String, Integer> map = new HashMap<>();
 
         //특수문자를 구분할 때 \\를 특수문자 앞에 삽입
