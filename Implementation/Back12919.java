@@ -34,7 +34,6 @@ public class Back12919 {
         if (T.charAt(0) == 'B') {
             StringBuilder sb = new StringBuilder(T.substring(1));
             isPossible += changeTintoS(S, sb.reverse().toString());
-            System.out.println(T +", "+isPossible);
         }
 
         return isPossible > 0 ? 1 :0;
