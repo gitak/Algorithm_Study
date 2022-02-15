@@ -31,5 +31,6 @@ public class Back9251 {
         }
 
         System.out.println(dp[A.length][B.length]);
+        br.close();//입력 종료
     }
 }

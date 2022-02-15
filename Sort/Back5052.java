@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-
 //트라이 자료구조도 함께 공부
 public class Back5052 {
     public static void main(String[] args) throws IOException {

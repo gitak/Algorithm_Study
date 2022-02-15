@@ -48,7 +48,7 @@ public class Back14499 {
             int next_x = x + dx[dir - 1];
             int next_y = y + dy[dir - 1];
 
-            if (next_x >= 0 && next_x <n && next_y >=0 && next_y <m) {
+            if (isRange(next_x, next_y)) {
                 rollDice(dir);
 
                 if (map[next_x][next_y] == 0) {

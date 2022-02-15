@@ -53,7 +53,7 @@ public class Back15686 {
 
         dfs(0,0);
         System.out.println(min_dist);
-
+        br.close(); //입력종료
     }
 
     //백트래킹 방식으로 조합을 통해 경우의 수를 구하는 메서드

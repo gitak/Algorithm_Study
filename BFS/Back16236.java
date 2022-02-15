@@ -93,7 +93,7 @@ public class Back16236 {
                                 feed.add(new Pos(new_x, new_y, temp.distance+1));
                             }
                             //방문처리 후 shark의 이동경로 추가
-                            visited[new_x][new_y] = true;
+//                            visited[new_x][new_y] = true;
                             shark.add(new Pos(new_x, new_y, temp.distance+1));
                         }
 //                        else if(map[new_x][new_y]==0) {
@@ -113,7 +113,6 @@ public class Back16236 {
 
         System.out.println(time);
     }
-
 
     //위치와 거리를 나타내기 위한 클래스
     static class Pos{

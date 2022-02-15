@@ -29,10 +29,7 @@ public class Back11052 {
                 dp[i] = Math.max(dp[i], dp[i-j] + price[j]);
             }
         }
-
         System.out.println(dp[n]);
-
-
 
         //그리디 알고리즘 반례
         //10
