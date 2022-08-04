@@ -74,7 +74,8 @@ public class Back1922 {
         br.close();
     }
 
-    //x가 어떤 집합에 포함되어 있는지 찾아주는 메서드(start가 속한 부모노드)
+    //x가 어떤 집합에 포함되어 있는지
+    // 찾아주는 메서드(start가 속한 부모노드)
     static int find(int x) {
         if (x == parent[x]) {
             return x;
@@ -83,6 +84,7 @@ public class Back1922 {
         return parent[x] = find(parent[x]);
     }
 
+    //x와 y가 서로 연결되었는지 확인하는 메서드
     static void union(int x, int y) {
         x = find(x);
         y = find(y);

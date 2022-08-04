@@ -107,7 +107,7 @@ public class Back1504 {
                 //현재노드(curNode)에서 인접한 모든 노드를 탐색
                 for (Node nexNode : adj.get(curNode)) {
 
-                    //다른 노드를 거쳐서 가는 것이 더 빠른 경우 갱신
+                    //방문하지 않은 다른 노드를 거쳐서 가는 것이 더 빠른 경우 갱신
                     if (!check[nexNode.end] && (dist[nexNode.end] > dist[curNode] + nexNode.weight)) {
                         dist[nexNode.end] = dist[curNode] + nexNode.weight;
                         pq.add(new Node(nexNode.end, dist[nexNode.end]));

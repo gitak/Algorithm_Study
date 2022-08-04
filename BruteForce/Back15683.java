@@ -29,7 +29,7 @@ public class Back15683 {
     static int[] dx = {-1, 0, 1, 0};
     static int[] dy = {0, 1, 0, -1};
 
-    //위쪽 방향을 기준으로 cctv 번호에 맞는 방향
+    //아래쪽 방향을 기준으로 cctv 번호에 맞는 방향
     static int[][] dir = {
             {},
             {1},
@@ -89,13 +89,13 @@ public class Back15683 {
 
         CCTV cctv = cctvs[index];
 
-        //위쪽 방향부터 시작하여 모든 방향을 탐색할 때
+        //아래쪽 방향부터 시작하여 모든 방향을 탐색할 때
         for (int i = 0; i < 4; i++) {
             int[][] new_map = copy_map(map);
 
             //cctv번호에 맞게 감시하는 경우
             for (int j = 0; j < dir[cctv.num].length; j++) {
-                int new_dir = (dir[cctv.num][j]- i + 3) % 4;
+                int new_dir = (dir[cctv.num][j] + i) % 4;
                 int new_x = cctv.x;
                 int new_y = cctv.y;
 
