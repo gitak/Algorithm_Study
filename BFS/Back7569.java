@@ -21,7 +21,7 @@ public class Back7569 {
 
     private static void logic() {
         bfs();
-        int max = Integer.MIN_VALUE;
+        int max = 0;
         for (int i = 1; i <= H; i++) {
             for (int j = 1; j <= N; j++) {
                 for (int k = 1; k <= M; k++) {
@@ -48,6 +48,7 @@ public class Back7569 {
         for (int i = 1; i <= H; i++) {
             for (int j = 1; j <= N; j++) {
                 for (int k = 1; k <= M; k++) {
+                    dist[i][j][k] = -1;
                     if (box[i][j][k] == 1) {
                         dist[i][j][k] = 0;
                         q.add(i);q.add(j);q.add(k);
@@ -65,7 +66,7 @@ public class Back7569 {
                 int new_x = x + dir[i][1];
                 int new_y = y + dir[i][2];
                 if(!inRange(new_h,new_x,new_y)) continue; //범위를 벗어났는가?
-                if(dist[new_h][new_x][new_y] != 0) continue; //방문한 적이 있는가?
+                if(dist[new_h][new_x][new_y] != -1) continue; //방문한 적이 있는가?
                 if(box[new_h][new_x][new_y] == -1) continue; //비어 있는가?
 
                 q.add(new_h);
