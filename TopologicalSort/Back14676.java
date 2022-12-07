@@ -11,7 +11,6 @@ public class Back14676 {
     static int N, K, M;
     static int[] indeg, count, satisfaction;
     static ArrayList<Integer>[] adj;
-    static StringBuilder sb = new StringBuilder();
     static BufferedReader br;
     static StringTokenizer st;
     public static void main(String[] args) throws IOException {
@@ -33,7 +32,7 @@ public class Back14676 {
             adj[i] = new ArrayList<>();
         }
 
-        for (int i = 1; i < M; i++) {
+        for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
             int x = Integer.parseInt(st.nextToken());
             int y = Integer.parseInt(st.nextToken());
@@ -83,7 +82,10 @@ public class Back14676 {
 
         }
 
-        if(abnormal) System.out.println("Liar!");
-        else System.out.println("King-God-Emperror");
+        if (abnormal) {
+            System.out.println("Lier!");
+        } else {
+            System.out.println("King-God-Emperor");
+        }
     }
 }
