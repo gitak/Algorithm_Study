@@ -33,6 +33,7 @@ public class Back9095 {
         dp[2] = 2;
         dp[3] = 4;
 
+        //점화식을 토대로 dp 배열 채우기
         for (int i = 4; i <= 11; i++) {
             dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3];
         }
