@@ -6,9 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Back2839 {
-
 	static BufferedReader br;
-	static BufferedWriter bw;
 	static int N;
 
 
@@ -44,7 +42,6 @@ public class Back2839 {
 
 			System.out.println(dp[N]);
 		}
-
 
 		br.close();
 		return;
